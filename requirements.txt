@@ -14,3 +14,10 @@ torch==2.7.1
 torchaudio==2.7.1
 torchmetrics==1.8.0
 torchvision==0.22.1
+soundfile>=0.12.1
+bioacoustics-model-zoo>=0.3.0
+opensoundscape>=0.10.0
+argparse
+pathlib2
+pickle5
+tempfile36
