@@ -1,0 +1,829 @@
+# Summary of HawkEars inference run in YAML format
+Configuration:
+- version: 1.0.8+
+- date: '2025-09-15'
+- start_time: '10:58:28'
+- elapsed: 00H:00M:01S
+- device: mps
+- openvino: false
+- num_threads: 3
+- min_score: 0.8
+- overlap: 1.5
+- merge_labels: true
+- date_str: null
+- latitude: null
+- longitude: null
+- region: null
+- filelist: null
+- embed: false
+- do_unfiltered: true
+- do_lpf: false
+- do_hpf: false
+- do_bpf: false
+- scaling_coefficient: 1.1
+- scaling_intercept: 1.7
+- power: 0.7
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Model 1:
+- path: data/ckpt/gernet1.ckpt
+- identifier: D4EF0548-8B09-4F80-96FA-9F8D844EA9B2
+- type: gernet_s
+- training_version: 1.0.7+
+- training_date: '2025-06-29'
+- classes: 353
+- parameters: 6930640
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Model 2:
+- path: data/ckpt/gernet2.ckpt
+- identifier: 14815589-22DF-4BBB-B5FB-7314DBB9A2B3
+- type: gernet_s
+- training_version: 1.0.7+
+- training_date: '2025-06-29'
+- classes: 353
+- parameters: 6930640
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Model 3:
+- path: data/ckpt/hgnet1.ckpt
+- identifier: 161EAE63-C8C1-47E3-98A3-E425BCC063DC
+- type: custom_hgnet_7B
+- training_version: 1.0.7+
+- training_date: '2025-06-28'
+- classes: 353
+- parameters: 5989409
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Model 4:
+- path: data/ckpt/hgnet2.ckpt
+- identifier: C8E09455-34F4-4831-98BE-E2C54A65DAEA
+- type: custom_hgnet_7B
+- training_version: 1.0.7+
+- training_date: '2025-06-28'
+- classes: 353
+- parameters: 5989409
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Model 5:
+- path: data/ckpt/vovnet1.ckpt
+- identifier: A25A09D5-0A96-459B-B8D4-F3268A0FDB40
+- type: custom_vovnet_5
+- training_version: 1.0.7+
+- training_date: '2025-06-29'
+- classes: 353
+- parameters: 5565333
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Model 6:
+- path: data/ckpt/vovnet2.ckpt
+- identifier: 3B1594C3-47B8-4237-A485-4CE8594E6032
+- type: custom_vovnet_5
+- training_version: 1.0.7+
+- training_date: '2025-06-29'
+- classes: 353
+- parameters: 5565333
+- segment_len: 3
+- spec_height: 192
+- spec_width: 384
+- sampling_rate: 37120
+- win_length: 2048
+- min_audio_freq: 200
+- max_audio_freq: 13000
+Classes:
+- name: American Bullfrog
+  code: FROG-BULL
+- name: American Toad
+  code: TOAD-AMER
+- name: Boreal Chorus Frog
+  code: FROG-BOCH
+- name: Canine
+  code: Canine
+- name: Canadian Toad
+  code: TOAD-CANA
+- name: Gray Treefrog
+  code: FROG-GRTR
+- name: Great Plains Toad
+  code: TOAD-GRPL
+- name: Green Frog
+  code: FROG-GREN
+- name: Northern Leopard Frog
+  code: FROG-LEOP
+- name: Mashup
+  code: Mashup
+- name: Noise
+  code: Noise
+- name: Other
+  code: Other
+- name: Pickerel Frog
+  code: FROG-PICK
+- name: Plains Spadefoot Toad
+  code: TOAD-PLSP
+- name: Rooster
+  code: Rooster
+- name: Spring Peeper
+  code: FROG-PEEP
+- name: Squirrel
+  code: Squirrel
+- name: Western Toad
+  code: TOAD-WEST
+- name: Wood Frog
+  code: FROG-WOOD
+- name: Acadian Flycatcher
+  code: ACFL
+- name: Alder Flycatcher
+  code: ALFL
+- name: American Avocet
+  code: AMAV
+- name: American Bittern
+  code: AMBI
+- name: American Coot
+  code: AMCO
+- name: American Crow
+  code: AMCR
+- name: American Dipper
+  code: AMDI
+- name: American Golden-Plover
+  code: AMGP
+- name: American Goldfinch
+  code: AGOL
+- name: American Kestrel
+  code: AMKE
+- name: American Pipit
+  code: AMPI
+- name: American Redstart
+  code: AMRE
+- name: American Robin
+  code: AMRO
+- name: American Three-toed Woodpecker
+  code: ATTW
+- name: American Tree Sparrow
+  code: ATSP
+- name: American Wigeon
+  code: AMWI
+- name: American Woodcock
+  code: AMWO
+- name: Anna's Hummingbird
+  code: ANHU
+- name: Arctic Tern
+  code: ARTE
+- name: Baird's Sparrow
+  code: BAIS
+- name: Baird's Sandpiper
+  code: BASA
+- name: Bald Eagle
+  code: BAEA
+- name: Baltimore Oriole
+  code: BAOR
+- name: Band-tailed Pigeon
+  code: BTPI
+- name: Bank Swallow
+  code: BANS
+- name: Barn Owl
+  code: BANO
+- name: Barn Swallow
+  code: BARS
+- name: Barred Owl
+  code: BADO
+- name: Bay-breasted Warbler
+  code: BBWA
+- name: Bell's Vireo
+  code: BEVI
+- name: Belted Kingfisher
+  code: BEKI
+- name: Bewick's Wren
+  code: BEWR
+- name: Black Oystercatcher
+  code: BLOY
+- name: Black Rail
+  code: BLRA
+- name: Black Tern
+  code: BLTE
+- name: Black Turnstone
+  code: BLTU
+- name: Black-and-white Warbler
+  code: BAWW
+- name: Black-backed Woodpecker
+  code: BBWO
+- name: Black-bellied Plover
+  code: BBPL
+- name: Black-billed Cuckoo
+  code: BBCU
+- name: Black-billed Magpie
+  code: BBMA
+- name: Black-capped Chickadee
+  code: BCCH
+- name: Black-crowned Night Heron
+  code: BCNH
+- name: Black-headed Grosbeak
+  code: BHGR
+- name: Black-throated Blue Warbler
+  code: BTBW
+- name: Black-throated Gray Warbler
+  code: BTGW
+- name: Black-throated Green Warbler
+  code: BTNW
+- name: Blackburnian Warbler
+  code: BLBW
+- name: Blackpoll Warbler
+  code: BLPW
+- name: Blue Jay
+  code: BLJA
+- name: Blue-gray Gnatcatcher
+  code: BGGN
+- name: Blue-headed Vireo
+  code: BHVI
+- name: Blue-winged Teal
+  code: BWTE
+- name: Blue-winged Warbler
+  code: BWWA
+- name: Bobolink
+  code: BOBO
+- name: Bohemian Waxwing
+  code: BOWA
+- name: Bonaparte's Gull
+  code: BOGU
+- name: Boreal Chickadee
+  code: BOCH
+- name: Boreal Owl
+  code: BOOW
+- name: Brant
+  code: BRAN
+- name: Brewer's Blackbird
+  code: BRBL
+- name: Brewer's Sparrow
+  code: BRSP
+- name: Broad-winged Hawk
+  code: BWHA
+- name: Brown Creeper
+  code: BRCR
+- name: Brown Thrasher
+  code: BRTH
+- name: Brown-headed Cowbird
+  code: BHCO
+- name: Bufflehead
+  code: BUFF
+- name: Bullock's Oriole
+  code: BUOR
+- name: Bushtit
+  code: BUSH
+- name: California Gull
+  code: CAGU
+- name: California Quail
+  code: CAQU
+- name: Canada Goose
+  code: CANG
+- name: Canada Jay
+  code: CAJA
+- name: Canada Warbler
+  code: CAWA
+- name: Cape May Warbler
+  code: CMWA
+- name: Carolina Wren
+  code: CARW
+- name: Caspian Tern
+  code: CATE
+- name: Cassin's Finch
+  code: CAFI
+- name: Cassin's Vireo
+  code: CAVI
+- name: Cedar Waxwing
+  code: CEDW
+- name: Cerulean Warbler
+  code: CERW
+- name: Chestnut-backed Chickadee
+  code: CBCH
+- name: Chestnut-collared Longspur
+  code: CCLO
+- name: Chestnut-sided Warbler
+  code: CSWA
+- name: Chimney Swift
+  code: CHSW
+- name: Chipping Sparrow
+  code: CHSP
+- name: Chuck-will's-widow
+  code: CWWI
+- name: Clapper Rail
+  code: CLRA
+- name: Clark's Nutcracker
+  code: CLNU
+- name: Clay-colored Sparrow
+  code: CCSP
+- name: Cliff Swallow
+  code: CLSW
+- name: Common Gallinule
+  code: COGA
+- name: Common Goldeneye
+  code: COGO
+- name: Common Grackle
+  code: COGR
+- name: Common Loon
+  code: COLO
+- name: Common Merganser
+  code: COME
+- name: Common Murre
+  code: COMU
+- name: Common Nighthawk
+  code: CONI
+- name: Common Poorwill
+  code: COPO
+- name: Common Raven
+  code: CORA
+- name: Common Tern
+  code: COTE
+- name: Common Yellowthroat
+  code: COYE
+- name: Connecticut Warbler
+  code: CONW
+- name: Cooper's Hawk
+  code: COHA
+- name: Dark-eyed Junco
+  code: DEJU
+- name: Dickcissel
+  code: DICK
+- name: Double-crested Cormorant
+  code: DCCO
+- name: Downy Woodpecker
+  code: DOWO
+- name: Dunlin
+  code: DUNL
+- name: Dusky Flycatcher
+  code: DUFL
+- name: Eared Grebe
+  code: EAGR
+- name: Eastern Bluebird
+  code: EABL
+- name: Eastern Kingbird
+  code: EAKI
+- name: Eastern Meadowlark
+  code: EAME
+- name: Eastern Phoebe
+  code: EAPH
+- name: Eastern Screech-Owl
+  code: EASO
+- name: Eastern Towhee
+  code: EATO
+- name: Eastern Whip-poor-will
+  code: EWPW
+- name: Eastern Wood-Pewee
+  code: EAWP
+- name: Eurasian Collared-Dove
+  code: EUCD
+- name: European Starling
+  code: EUST
+- name: Evening Grosbeak
+  code: EVGR
+- name: Field Sparrow
+  code: FISP
+- name: Fish Crow
+  code: FICR
+- name: Forster's Tern
+  code: FOTE
+- name: Fox Sparrow
+  code: FOSP
+- name: Franklin's Gull
+  code: FRGU
+- name: Gadwall
+  code: GADW
+- name: Glaucous-winged Gull
+  code: GWGU
+- name: Golden Eagle
+  code: GOEA
+- name: Golden-crowned Kinglet
+  code: GCKI
+- name: Golden-crowned Sparrow
+  code: GCSP
+- name: Golden-winged Warbler
+  code: GWWA
+- name: Grasshopper Sparrow
+  code: GRSP
+- name: Gray Catbird
+  code: GRCA
+- name: Gray Flycatcher
+  code: GRFL
+- name: Gray Partridge
+  code: GRAP
+- name: Gray-cheeked Thrush
+  code: GCTH
+- name: Great Black-backed Gull
+  code: GBBG
+- name: Great Blue Heron
+  code: GBHE
+- name: Great Crested Flycatcher
+  code: GCFL
+- name: Great Egret
+  code: GREG
+- name: Great Gray Owl
+  code: GGOW
+- name: Great Horned Owl
+  code: GHOW
+- name: Greater White-fronted Goose
+  code: GWFG
+- name: Greater Yellowlegs
+  code: GRYE
+- name: Green Heron
+  code: GRHE
+- name: Green-winged Teal
+  code: GWTE
+- name: Hairy Woodpecker
+  code: HAWO
+- name: Hammond's Flycatcher
+  code: HAFL
+- name: Harris's Sparrow
+  code: HASP
+- name: Henslow's Sparrow
+  code: HESP
+- name: Hermit Thrush
+  code: HETH
+- name: Herring Gull
+  code: HERG
+- name: Hooded Merganser
+  code: HOME
+- name: Hooded Warbler
+  code: HOWA
+- name: Horned Grebe
+  code: HOGR
+- name: Horned Lark
+  code: HOLA
+- name: House Finch
+  code: HOFI
+- name: House Sparrow
+  code: HOSP
+- name: House Wren
+  code: HOWR
+- name: Indigo Bunting
+  code: INBU
+- name: Kentucky Warbler
+  code: KEWA
+- name: Killdeer
+  code: KILL
+- name: King Rail
+  code: KIRA
+- name: Kirtland's Warbler
+  code: KIWA
+- name: Lapland Longspur
+  code: LALO
+- name: Lark Sparrow
+  code: LASP
+- name: Lazuli Bunting
+  code: LAZB
+- name: Least Bittern
+  code: LEBI
+- name: Least Flycatcher
+  code: LEFL
+- name: Least Sandpiper
+  code: LESA
+- name: LeConte's Sparrow
+  code: LCSP
+- name: Lesser Black-backed Gull
+  code: LBBG
+- name: Lesser Yellowlegs
+  code: LEYE
+- name: Lincoln's Sparrow
+  code: LISP
+- name: Loggerhead Shrike
+  code: LOSH
+- name: Long-billed Curlew
+  code: LBCU
+- name: Long-billed Dowitcher
+  code: LBDO
+- name: Long-eared Owl
+  code: LEOW
+- name: Long-tailed Duck
+  code: LTDU
+- name: Louisiana Waterthrush
+  code: LOWA
+- name: MacGillivray's Warbler
+  code: MGWA
+- name: Magnolia Warbler
+  code: MAWA
+- name: Mallard
+  code: MALL
+- name: Marbled Godwit
+  code: MAGO
+- name: Marbled Murrelet
+  code: MAMU
+- name: Marsh Wren
+  code: MAWR
+- name: Merlin
+  code: MERL
+- name: Mountain Bluebird
+  code: MOBL
+- name: Mountain Chickadee
+  code: MOCH
+- name: Mourning Dove
+  code: MODO
+- name: Mourning Warbler
+  code: MOWA
+- name: Mute Swan
+  code: MUSW
+- name: Nashville Warbler
+  code: NAWA
+- name: Nelson's Sparrow
+  code: NESP
+- name: Northern Cardinal
+  code: NOCA
+- name: Northern Flicker
+  code: NOFL
+- name: American Goshawk
+  code: AGOS
+- name: Northern Harrier
+  code: NOHA
+- name: Northern Hawk Owl
+  code: NHOW
+- name: Northern Parula
+  code: NOPA
+- name: Northern Pintail
+  code: NOPI
+- name: Northern Pygmy-Owl
+  code: NOPO
+- name: Northern Rough-winged Swallow
+  code: NRWS
+- name: Northern Saw-whet Owl
+  code: NSWO
+- name: Northern Shoveler
+  code: NSHO
+- name: Northern Shrike
+  code: NSHR
+- name: Northern Waterthrush
+  code: NOWA
+- name: Olive-sided Flycatcher
+  code: OSFL
+- name: Orange-crowned Warbler
+  code: OCWA
+- name: Orchard Oriole
+  code: OROR
+- name: Osprey
+  code: OSPR
+- name: Ovenbird
+  code: OVEN
+- name: Pacific Wren
+  code: PAWR
+- name: Palm Warbler
+  code: PAWA
+- name: Pectoral Sandpiper
+  code: PESA
+- name: Peregrine Falcon
+  code: PEFA
+- name: Philadelphia Vireo
+  code: PHVI
+- name: Pied-billed Grebe
+  code: PBGR
+- name: Pileated Woodpecker
+  code: PIWO
+- name: Pine Grosbeak
+  code: PIGR
+- name: Pine Siskin
+  code: PISI
+- name: Pine Warbler
+  code: PIWA
+- name: Prairie Warbler
+  code: PRAW
+- name: Prothonotary Warbler
+  code: PROW
+- name: Purple Finch
+  code: PUFI
+- name: Purple Martin
+  code: PUMA
+- name: Red Crossbill
+  code: RECR
+- name: Redhead
+  code: REDH
+- name: Redpoll
+  code: REDP
+- name: Red-bellied Woodpecker
+  code: RBWO
+- name: Red-breasted Nuthatch
+  code: RBNU
+- name: Red-breasted Sapsucker
+  code: RBSA
+- name: Red-eyed Vireo
+  code: REVI
+- name: Red-headed Woodpecker
+  code: RHWO
+- name: Red-naped Sapsucker
+  code: RNSA
+- name: Red-necked Grebe
+  code: RNGR
+- name: Red-necked Phalarope
+  code: RNPH
+- name: Red-shouldered Hawk
+  code: RSHA
+- name: Red-tailed Hawk
+  code: RTHA
+- name: Red-throated Loon
+  code: RTLO
+- name: Red-winged Blackbird
+  code: RWBL
+- name: Ring-billed Gull
+  code: RBGU
+- name: Ring-necked Duck
+  code: RNDU
+- name: Ring-necked Pheasant
+  code: RNEP
+- name: Rock Pigeon
+  code: ROPI
+- name: Rock Ptarmigan
+  code: ROPT
+- name: Rock Wren
+  code: ROWR
+- name: Rose-breasted Grosbeak
+  code: RBGR
+- name: Rough-legged Hawk
+  code: RLHA
+- name: Ruby-crowned Kinglet
+  code: RCKI
+- name: Ruby-throated Hummingbird
+  code: RTHU
+- name: Ruddy Duck
+  code: RUDU
+- name: Ruddy Turnstone
+  code: RUTU
+- name: Ruffed Grouse
+  code: RUGR
+- name: Rufous Hummingbird
+  code: RUHU
+- name: Rusty Blackbird
+  code: RUBL
+- name: Sanderling
+  code: SAND
+- name: Sandhill Crane
+  code: SACR
+- name: Savannah Sparrow
+  code: SAVS
+- name: Say's Phoebe
+  code: SAPH
+- name: Scarlet Tanager
+  code: SCTA
+- name: Sedge Wren
+  code: SEWR
+- name: Semipalmated Plover
+  code: SEPL
+- name: Semipalmated Sandpiper
+  code: SESA
+- name: Sharp-shinned Hawk
+  code: SSHA
+- name: Sharp-tailed Grouse
+  code: STGR
+- name: Short-billed Dowitcher
+  code: SBDO
+- name: Short-billed Gull
+  code: SBIG
+- name: Short-eared Owl
+  code: SEOW
+- name: Snow Bunting
+  code: SNBU
+- name: Snow Goose
+  code: SNGO
+- name: Solitary Sandpiper
+  code: SOSA
+- name: Song Sparrow
+  code: SOSP
+- name: Sora
+  code: SORA
+- name: Spotted Sandpiper
+  code: SPSA
+- name: Spotted Towhee
+  code: SPTO
+- name: Sprague's Pipit
+  code: SPPI
+- name: Spruce Grouse
+  code: SPGR
+- name: Steller's Jay
+  code: STJA
+- name: Summer Tanager
+  code: SUTA
+- name: Swainson's Hawk
+  code: SWHA
+- name: Swainson's Thrush
+  code: SWTH
+- name: Swamp Sparrow
+  code: SWSP
+- name: Tennessee Warbler
+  code: TEWA
+- name: Thick-billed Longspur
+  code: TBLO
+- name: Townsend's Solitaire
+  code: TOSO
+- name: Townsend's Warbler
+  code: TOWA
+- name: Tree Swallow
+  code: TRES
+- name: Trumpeter Swan
+  code: TRUS
+- name: Tufted Titmouse
+  code: TUTI
+- name: Tundra Swan
+  code: TUSW
+- name: Upland Sandpiper
+  code: UPSA
+- name: Varied Thrush
+  code: VATH
+- name: Vaux's Swift
+  code: VASW
+- name: Veery
+  code: VEER
+- name: Vesper Sparrow
+  code: VESP
+- name: Violet-green Swallow
+  code: VGSW
+- name: Virginia Rail
+  code: VIRA
+- name: Warbling Vireo
+  code: WAVI
+- name: Western Flycatcher
+  code: WEFL
+- name: Western Grebe
+  code: WEGR
+- name: Western Kingbird
+  code: WEKI
+- name: Western Meadowlark
+  code: WEME
+- name: Western Tanager
+  code: WETA
+- name: Western Wood-Pewee
+  code: WEWP
+- name: Whimbrel
+  code: WHIM
+- name: White-breasted Nuthatch
+  code: WBNU
+- name: White-crowned Sparrow
+  code: WCSP
+- name: White-eyed Vireo
+  code: WEVI
+- name: White-rumped Sandpiper
+  code: WRSA
+- name: White-throated Sparrow
+  code: WTSP
+- name: White-winged Crossbill
+  code: WWCR
+- name: Wild Turkey
+  code: WITU
+- name: Willet
+  code: WILL
+- name: Willow Flycatcher
+  code: WIFL
+- name: Willow Ptarmigan
+  code: WIPT
+- name: Wilson's Phalarope
+  code: WIPH
+- name: Wilson's Snipe
+  code: WISN
+- name: Wilson's Warbler
+  code: WIWA
+- name: Winter Wren
+  code: WIWR
+- name: Wood Duck
+  code: WODU
+- name: Wood Thrush
+  code: WOTH
+- name: Yellow Rail
+  code: YERA
+- name: Yellow Warbler
+  code: YEWA
+- name: Yellow-bellied Flycatcher
+  code: YBFL
+- name: Yellow-bellied Sapsucker
+  code: YBSA
+- name: Yellow-billed Cuckoo
+  code: YBCU
+- name: Yellow-breasted Chat
+  code: YBCH
+- name: Yellow-headed Blackbird
+  code: YHBL
+- name: Yellow-rumped Warbler
+  code: YRWA
+- name: Yellow-throated Vireo
+  code: YTVI
+- name: Yellow-throated Warbler
+  code: YTWA

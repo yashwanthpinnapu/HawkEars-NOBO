@@ -1,0 +1,2 @@
+# Format: start_time\tend_time\tspecies;confidence_source
+0.00	6.00	COYE;0.999_hawkears

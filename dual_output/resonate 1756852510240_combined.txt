@@ -1,0 +1,9 @@
+# Format: start_time\tend_time\tspecies;confidence_source
+1.50	4.50	NOBO_S;0.541_nobo_classifier_t0.204
+6.00	9.00	NOBO_S;0.506_nobo_classifier_t0.204
+7.50	10.50	NOBO_S;0.316_nobo_classifier_t0.204
+9.00	12.00	FICR;0.902_hawkears
+15.00	19.50	FICR;0.973_hawkears
+19.50	22.50	NOBO_S;0.397_nobo_classifier_t0.204
+22.50	25.50	NOBO_S;0.775_nobo_classifier_t0.204
+24.00	27.00	NOBO_S;0.817_nobo_classifier_t0.204
